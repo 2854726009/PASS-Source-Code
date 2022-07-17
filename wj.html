@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>省实极光工作室</title>
+		<link href="css/2bootstrap.min.css" rel="stylesheet">
+		<style>
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 最大的div -->
+		<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+		  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+		    <div class="toast-header">
+		      <img src="img/pass+logo.png" class="rounded" style="width: 30px; height: 30px;" alt="...">
+		      <strong class="me-auto">省实极光工作室</strong>
+		      <small></small>
+		      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+		    </div>
+		    <div class="toast-body"></div>
+		  </div>
+		</div>
+		
+		<div class="container-fluid p-0">
+			<div class="row pt-5" align="center">
+				<h1 class="display-4 ps-5 pe-5">省实信息部2022年招新问卷</h1>
+			</div>
+			<div class="row pt-5" >
+				<div class="col-2">
+					
+				</div>
+				<div class="col-8">
+					<h2 align="center">第一部分</h2>
+					
+					<label class="form-label "><h5>基本信息</h5></label>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text">姓名</span>
+						<input id="ip_1" type="text" class="form-control" placeholder="" aria-label="xingming" aria-describedby="ip_1" required>
+						<!-- <span class="input-group-text" id="sp_1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+							  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+							</svg>
+						</span> -->
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text" id="sp_2">性别</span>
+						<select id="sl_1" class="form-select" aria-label="xingbie">
+							<option selected></option>
+							<option value="男">男</option>
+							<option value="女">女</option>
+						</select>
+					</div>
+					
+					<div class="input-group mb-3">
+						<form class="form-floating w-100">
+							<input id="ip_2" type="email" class="form-control" id="floatingInputInvalid" placeholder="" value="">
+							<label for="floatingInputInvalid">毕业学校</label>
+						</form>
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text" id="sp_3">第一意向组别</span>
+						<select id="sl_2" class="form-select" aria-label="">
+							<option selected>（必填）</option>
+							<option value="视频组">视频组</option>
+							<option value="影像组">影像组</option>
+							<option value="信息组">信息组</option>
+							<option value="音效组">音效组</option>
+							<option value="平面设计组">平面设计组</option>
+						</select>
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text" id="sp_4">第二意向组别</span>
+						<select id="sl_3" class="form-select" aria-label="">
+							<option selected>（选填）</option>
+							<option value="视频组">视频组</option>
+							<option value="影像组">影像组</option>
+							<option value="信息组">信息组</option>
+							<option value="音效组">音效组</option>
+							<option value="平面设计组">平面设计组</option>
+						</select>
+					</div>
+					
+					<div class="input-group mb-3">
+						<div class="form-floating w-100">
+						  <textarea id="ta_1" class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
+						  <label for="floatingTextarea2">自我介绍</label>
+						</div>
+					</div>
+					
+					<label class="form-label "><h5>联系方式(选填至少1项)</h5></label>
+					
+					<div class="input-group mb-3">
+						<form class="form-floating w-100">
+							<input id="ip_3" type="email" class="form-control" id="floatingInputInvalid" placeholder="" value="">
+							<label for="floatingInputInvalid">电子邮箱</label>
+						</form>
+					</div>
+					
+					<div class="input-group mb-3">
+						<form class="form-floating w-100">
+							<input id="ip_4" type="number" class="form-control" id="floatingInputInvalid" placeholder="" value="">
+							<label for="floatingInputInvalid">QQ号</label>
+						</form>
+					</div>
+					
+					<div class="input-group mb-3">
+						<form class="form-floating w-100">
+							<input id="ip_5" type="text" class="form-control" id="floatingInputInvalid" placeholder="" value="">
+							<label for="floatingInputInvalid">微信号</label>
+						</form>
+					</div>
+					
+					<div class="input-group mb-3">
+						<form class="form-floating w-100">
+							<input id="ip_6" type="tel" class="form-control" id="floatingInputInvalid" placeholder="" value="">
+							<label for="floatingInputInvalid">电话号码</label>
+						</form>
+					</div>
+					
+					<div class="mb-3" style="text-align: center;">
+						<!-- <button type="button" class="btn btn-outline-primary ">上一步</button> -->
+						<button type="button" class="btn btn-outline-primary " id="next">下一步</button>
+					</div>
+					
+				</div>
+				<div class="col-2">
+					
+				</div>
+			</div>
+			
+			<div class="row pt-5" >
+				<div class="col-2">
+					
+				</div>
+				<div class="col-8">
+					
+				</div>
+				<div class="col-2">
+					
+				</div>
+			</div>
+		</div>
+			
+	</body>
+</html>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+	function loadquestion(index){
+		$.get("data.php?type=question&index=".index, function(data, stauts){
+			
+		});
+	}
+	
+	function toast(text){
+		var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+		$("#liveToast .toast-body").text(error);
+		toast.show();
+	}
+	
+	$("#next").click(function(){
+		switch($("#sl_2").val()){
+			case "音效组":
+				
+				break;
+			
+			case "影像组":
+				
+				break;
+		}
+	});
+	
+	$("#submit").click(function(){
+		
+		error = "";
+		if($("#ip_1").val() == ""){
+			error = "姓名不能为空"
+			$("#ip_1").removeClass("is-valid");
+			$("#ip_1").addClass("is-invalid");
+		}
+		else{
+			$("#ip_1").removeClass("is-invalid");
+			$("#ip_1").addClass("is-valid");
+		}
+		
+		if($("#sl_1").val() == ""){
+			error = "性别不能为空"
+			$("#sl_1").removeClass("is-valid");
+			$("#sl_1").addClass("is-invalid");
+		}
+		else{
+			$("#sl_1").removeClass("is-invalid");
+			$("#sl_1").addClass("is-valid");
+		}
+		
+		if($("#sl_2").val() == "（必填）"){
+			error = "第一意向组别不能为空"
+			$("#sl_2").removeClass("is-valid");
+			$("#sl_2").addClass("is-invalid");
+		}
+		else{
+			$("#sl_2").removeClass("is-invalid");
+			$("#sl_1").addClass("is-valid");
+		}
+		
+		if($("#ip_3").val() == "" & $("#ip_4").val() == "" & $("#ip_5").val() == "" & $("#ip_6").val() == ""){
+			error = "请至少填写一种联系方式";
+		}
+		
+		if(error != ""){
+			toast(error);
+		}
+		else{
+			$("#submit").text("正在提交...");
+			$.post("data.php",
+			{
+				type:"wj",
+				name: $("#ip_1").val(),
+				sex: $("#sl_1").val(),
+				school: $("#ip_2").val(),
+				firstgroup: $("#sl_2").val(),
+				secondgroup: $("#sl_3").val(),
+				selfintro: $("#ta_1").val(),
+				email: $("#ip_3").val(),
+				qq: $("#ip_4").val(),
+				wechat: $("#ip_5").val(),
+				tel: $("#ip_6").val()
+			},
+			function(data, status){
+				if(data != "400"){
+					//alert(data);
+					window.location.href = "success.html";
+				}
+			}
+			);
+		}
+
+	});
+</script>
